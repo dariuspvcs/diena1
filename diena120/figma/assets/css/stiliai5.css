@@ -1,0 +1,154 @@
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: black;
+}
+
+header {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header .logo {
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  text-transform: lowercase;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.hero-fonas {
+  background: rgb(141, 234, 141);
+}
+
+.hero {
+  background: rgb(141, 234, 141);
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero p {
+  padding: 25px 0;
+}
+
+.hero > div > button {
+  background: rgb(43, 42, 42);
+  border: 0;
+  color: white;
+  padding: 7px 15px;
+  border: 1px solid rgb(43, 42, 42);
+}
+
+.hero > div > button:last-child {
+  background: none;
+  color: rgb(43, 42, 42);
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.juosta-fonas {
+  background: lightblue;
+}
+
+.juosta {
+  background: lightblue;
+  color: black;
+  padding: 20px;
+  text-align: justify;
+}
+
+.straipsniai {
+  background: peachpuff;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.straipsniai > div {
+  background: rgb(255, 245, 237);
+  width: calc(33.33% - 60px);
+  padding: 20px;
+}
+
+.straipsniai > div p {
+  padding: 20px 0;
+}
+
+footer {
+  background: rgb(43, 40, 40);
+  color: white;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer > div {
+  width: calc(33.33% - 20px);
+}
+
+footer > div a {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  header > div {
+    width: 100%;
+    text-align: center;
+  }
+  .straipsniai > div,
+  footer > div {
+    width: calc(100% - 20px);
+  }
+}

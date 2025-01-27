@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .skirtingas-turinys table,
+      .skirtingas-turinys table td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      @media only screen and (min-width: 576px) {
+        .skirtingas-turinys .telefonas {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        .skirtingas-turinys .kompiuteris {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body style="border: 1px solid red">
+    <div class="skirtingas-turinys">
+      <div class="kompiuteris">
+        <table>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Vero, suscipit.</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Sint, ipsum.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="telefonas">
+        <ul>
+          <li>Lorem, ipsum.</li>
+          <li>Ut, iure.</li>
+          <li>Porro, sit!</li>
+          <li>Eveniet, unde.</li>
+          <li>Sed, aliquid!</li>
+          <li>Eum, quod?</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
